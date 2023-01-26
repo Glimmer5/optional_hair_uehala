@@ -5,7 +5,7 @@ import type { StyleFunctionProps } from '@chakra-ui/styled-system';
 const styles = {
     global: (props: StyleFunctionProps) => ({
         body: {
-            bg: mode("gray.100", "gray.800")(props) 
+            bg: mode("gray.100", "gray.700")(props) 
         }
     })
 }
