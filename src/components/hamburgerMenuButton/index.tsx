@@ -4,8 +4,12 @@ import {
   MenuList,
   MenuItem,
   IconButton,
+  MenuDivider,
+  Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { IoLogoFacebook } from "react-icons/io5";
+import { IoLogoInstagram } from "react-icons/io5";
 
 const HamburgerMenuButton: React.FC = () => {
   return (
@@ -17,10 +21,19 @@ const HamburgerMenuButton: React.FC = () => {
         area-label="Options"
       />
       <MenuList>
-        <MenuItem>コンセプト</MenuItem>
-        <MenuItem>メニュー</MenuItem>
-        <MenuItem>スタッフ</MenuItem>
-        <MenuItem>お店の情報</MenuItem>
+        <MenuItem>About</MenuItem>
+        <MenuItem>Menu</MenuItem>
+        <MenuItem>Staff</MenuItem>
+        <MenuItem>Access</MenuItem>
+        <MenuDivider />
+        <MenuItem>
+          <IoLogoFacebook />
+          <Text ml={1}>Facebook</Text>
+        </MenuItem>
+        <MenuItem>
+          <IoLogoInstagram />
+          <Text ml={1}>Instagram</Text>
+        </MenuItem>
       </MenuList>
     </Menu>
   );
