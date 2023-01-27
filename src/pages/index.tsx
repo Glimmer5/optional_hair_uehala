@@ -1,10 +1,10 @@
-import { Button } from '@chakra-ui/react';
+import { VStack } from "@chakra-ui/react";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div>
-      <h2 style={{ fontSize: "50px", fontFamily: "Zen Kaku Gothic Antique"}}>こんにちは</h2>
-      <Button colorScheme="blue">Button</Button>
-    </div>
-  )
-}
+    <VStack alignItems={{ sm: "center", md: "center", lg: "start" }}>
+    </VStack>
+  );
+};
+
+export default Home;
