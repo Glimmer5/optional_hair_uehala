@@ -37,6 +37,7 @@ const Header: React.FC = () => {
             fontWeight="extrabold"
           >
             <Logo />
+            Optional Hair Uehala
           </Heading>
         </Flex>
 
