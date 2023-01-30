@@ -1,9 +1,11 @@
-import { VStack } from "@chakra-ui/react";
+import { Container, Box } from "@chakra-ui/react";
 
 const Home: React.FC = () => {
   return (
-    <VStack alignItems={{ sm: "center", md: "center", lg: "start" }}>
-    </VStack>
+
+    <Container mb={6} p={3}>
+      <Box h="100vh"></Box>
+    </Container>
   );
 };
 
