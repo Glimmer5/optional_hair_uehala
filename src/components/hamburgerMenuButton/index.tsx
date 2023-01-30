@@ -6,6 +6,7 @@ import {
   IconButton,
   MenuDivider,
   Text,
+  Link
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { IoLogoFacebook } from "react-icons/io5";
@@ -26,11 +27,11 @@ const HamburgerMenuButton: React.FC = () => {
         <MenuItem>Staff</MenuItem>
         <MenuItem>Access</MenuItem>
         <MenuDivider />
-        <MenuItem>
+        <MenuItem as={Link} href="https://ja-jp.facebook.com/people/Optional-Hair-Uehala/100057615032399/">
           <IoLogoFacebook />
           <Text ml={1}>Facebook</Text>
         </MenuItem>
-        <MenuItem>
+        <MenuItem as={Link} href="https://www.instagram.com/optional_hair_uehala/">
           <IoLogoInstagram />
           <Text ml={1}>Instagram</Text>
         </MenuItem>
