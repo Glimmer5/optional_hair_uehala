@@ -9,7 +9,7 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <Box as="main" pb={8}>
+    <Box as="main" pb={10}>
       <Header />
       {children}
       <Footer />

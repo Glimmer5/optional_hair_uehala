@@ -14,7 +14,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 
 const HamburgerMenuButton: React.FC = () => {
   return (
-    <Menu>
+    <Menu isLazy>
       <MenuButton
         as={IconButton}
         icon={<HamburgerIcon />}
