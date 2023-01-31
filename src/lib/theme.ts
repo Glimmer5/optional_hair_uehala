@@ -1,6 +1,8 @@
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 import type { StyleFunctionProps } from '@chakra-ui/styled-system';
+import { dividerTheme } from './divider';
+
 
 const styles = {
     global: (props: StyleFunctionProps) => ({
@@ -15,6 +17,8 @@ const config: ThemeConfig = {
     useSystemColorMode: true
 }
 
-const theme = extendTheme({ styles, config });
+
+
+const theme = extendTheme({ styles, config, components: {Divider: dividerTheme} });
 
 export default theme;
