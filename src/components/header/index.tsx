@@ -23,7 +23,7 @@ const Header: React.FC = () => {
       w="100%"
       bg={useColorModeValue("#ffffff40", "#20202380")}
       css={{ backdropFilter: "blur(10px)" }}
-      z-index={2}
+      zIndex={2}
     >
       <Container
         display="flex"
