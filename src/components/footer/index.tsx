@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
         <Container display="flex" justifyContent="center">
           <Link
             href="https://ja-jp.facebook.com/people/Optional-Hair-Uehala/100057615032399/"
-            mr={8}
+            mr={6}
           >
             <IoLogoFacebook size={20} />
           </Link>

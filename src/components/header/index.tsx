@@ -52,6 +52,7 @@ const Header: React.FC = () => {
           color="gray.500"
           fontWeight="bold"
           separator=""
+          spacing="10px"
         >
           <BreadcrumbItem>
             <BreadcrumbLink href="/">About</BreadcrumbLink>
