@@ -5,9 +5,9 @@ import { IoLogoInstagram } from "react-icons/io5";
 const Footer: React.FC = () => {
   return (
     <>
-      <Divider mb={8} size="xl" />
+      <Divider mb={5} size="xl" />
       <Box alignItems="center" opacity={0.5} fontSize="sm" textAlign="center">
-        <Text mb={5}>
+        <Text mb={3}>
           &copy; {new Date().getFullYear()} Optional hair Uehala. All Rights
           Reserved.
         </Text>
