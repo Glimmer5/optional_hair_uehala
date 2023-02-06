@@ -2,6 +2,7 @@ import { Container, Box } from "@chakra-ui/react";
 import BreadCrumbButton from "../components/breadCrumbButton";
 import Iframe from "../components/iframe";
 import Title from "../components/title";
+import Article from "../components/article";
 
 const Access: React.FC = () => {
   return (
@@ -13,7 +14,10 @@ const Access: React.FC = () => {
         <Box mb={10}>
           <Iframe />
         </Box>
-        <Title>店舗情報</Title>
+        <Box mb={10}>
+          <Title>店舗情報</Title>
+        </Box>
+        <Article />
       </Box>
     </Container>
   );
