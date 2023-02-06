@@ -5,7 +5,7 @@ const Access: React.FC = () => {
   return (
     <Container mb={6} p={3}>
       <Box my={80}>
-        <BreadCrumbButton />
+        <BreadCrumbButton>Access</BreadCrumbButton>
       </Box>
     </Container>
   );

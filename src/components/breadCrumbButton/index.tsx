@@ -1,7 +1,11 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
-const BreadCrumbButton: React.FC = () => {
+type BreadCrumbButtonProps = {
+  children: React.ReactNode;
+}
+
+const BreadCrumbButton: React.FC<BreadCrumbButtonProps> = ({ children }) => {
   return (
     <Breadcrumb spacing="5px" separator={<ChevronRightIcon color="gray.500" />}>
       <BreadcrumbItem>
@@ -18,7 +22,7 @@ const BreadCrumbButton: React.FC = () => {
 
       <BreadcrumbItem>
         <BreadcrumbLink color="green.500" pointerEvents="none">
-          Access
+          {children}
         </BreadcrumbLink>
       </BreadcrumbItem>
     </Breadcrumb>
