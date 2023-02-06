@@ -52,6 +52,7 @@ const Header: React.FC = () => {
           color="gray.500"
           fontWeight="bold"
           separator=""
+          spacing="10px"
         >
           <BreadcrumbItem>
             <BreadcrumbLink href="/">About</BreadcrumbLink>
@@ -63,7 +64,7 @@ const Header: React.FC = () => {
             <BreadcrumbLink href="/">Staff</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Access</BreadcrumbLink>
+            <BreadcrumbLink href="/access">Access</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
             <BreadcrumbLink
