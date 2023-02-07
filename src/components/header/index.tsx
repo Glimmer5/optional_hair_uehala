@@ -1,3 +1,4 @@
+import NextLink from "next/link";
 import {
   Box,
   Container,
@@ -55,16 +56,16 @@ const Header: React.FC = () => {
           spacing="10px"
         >
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">About</BreadcrumbLink>
+            <BreadcrumbLink as={NextLink} href="/">About</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Menu</BreadcrumbLink>
+            <BreadcrumbLink as={NextLink} href="/">Menu</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Staff</BreadcrumbLink>
+            <BreadcrumbLink as={NextLink} href="/">Staff</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/access">Access</BreadcrumbLink>
+            <BreadcrumbLink as={NextLink} href="/access">Access</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
             <BreadcrumbLink

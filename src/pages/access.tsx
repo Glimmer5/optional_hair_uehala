@@ -8,7 +8,7 @@ import LinkButton from "../components/linkButton";
 const Access: React.FC = () => {
   return (
     <Container mb={6} p={3}>
-      <Box mt={55}>
+      <Box mt="70px">
         <Box mb={10}>
           <BreadCrumbButton>Access</BreadCrumbButton>
         </Box>
