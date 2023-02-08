@@ -7,14 +7,12 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
   container: {
     backgroundColor: "white",
-    borderWidth: "0.5px",
-    borderColor: "gray.300",
     boxShadow: "xl",
     borderRadius: "md",
+    backdropFilter: "blur(10px)",
 
     _dark: {
-      backgroundColor: "gray.700",
-      borderColor: "gray.300"
+      backgroundColor: "whiteAlpha.200",
     }
   },
   body: {
