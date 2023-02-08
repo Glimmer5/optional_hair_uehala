@@ -1,4 +1,5 @@
 import { Container, Box } from "@chakra-ui/react";
+import { PhoneIcon } from "@chakra-ui/icons";
 import BreadCrumbButton from "../components/breadCrumbButton";
 import Iframe from "../components/iframe";
 import Title from "../components/title";
@@ -22,7 +23,9 @@ const Access: React.FC = () => {
           <Article />
         </Box>
         <Box textAlign="center">
-          <LinkButton>026-247-2540</LinkButton>
+          <LinkButton href="/" leftIcon={<PhoneIcon />}>
+            026-247-2540
+          </LinkButton>
         </Box>
       </Box>
     </Container>

@@ -1,19 +1,22 @@
 import NextLink from "next/link";
 import { Button } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
 
 type LinkButtonProps = {
   children: React.ReactNode;
+  href: string;
+  rightIcon?: any;
+  leftIcon?: any;
 };
 
-const LinkButton: React.FC<LinkButtonProps> = ({ children }) => {
+const LinkButton: React.FC<LinkButtonProps> = ({ children, href, rightIcon, leftIcon }) => {
   return (
     <Button
       as={NextLink}
-      href="/access"
+      href={href}
       colorScheme="blue"
       boxShadow="xl"
-      rightIcon={<ChevronRightIcon />}
+      rightIcon={rightIcon}
+      leftIcon={leftIcon}
     >
       {children}
     </Button>

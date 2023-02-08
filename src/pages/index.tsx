@@ -1,4 +1,5 @@
 import { Container, Box } from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import Iframe from "../components/iframe";
 import LinkButton from "../components/linkButton";
 
@@ -8,7 +9,7 @@ const Home: React.FC = () => {
       <Box my={80}>
         <Iframe />
         <Box textAlign="center" my={6}>
-          <LinkButton>詳しく見る</LinkButton>
+          <LinkButton href="/access" rightIcon={<ChevronRightIcon />}>詳しく見る</LinkButton>
         </Box>
       </Box>
     </Container>
