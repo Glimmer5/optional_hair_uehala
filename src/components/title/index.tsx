@@ -6,7 +6,7 @@ type TitleProps = {
 
 const Title: React.FC<TitleProps> = ({ children }) => {
   return (
-    <Box bg="teal.600" color="white" borderRadius="md" p={4} boxShadow="xl">
+    <Box bg="teal.500" color="white" borderRadius="md" p={4} boxShadow="xl">
       {children}
     </Box>
   );
