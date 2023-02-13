@@ -7,7 +7,7 @@ const CardItem = () => {
     <Card maxW="sm">
       <CardBody>
         <Box borderRadius="lg">
-          <Image alt="cutMenu" src={imageSrc} />
+          <Image loader={({ src }) => src} alt="cutMenu" src={imageSrc} />
         </Box>
         <Heading size="md" textAlign="center">
           Cut
