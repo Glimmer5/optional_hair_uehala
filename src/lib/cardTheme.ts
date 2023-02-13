@@ -17,6 +17,9 @@ const baseStyle = definePartsStyle({
   },
   body: {
     p: "15px",
+  },
+  footer: {
+    paddingTop: "0px"
   }
 })
 

@@ -9,8 +9,8 @@ import Section from "../components/section";
 const Home: React.FC = () => {
   return (
     <MotionLayout>
-      <Container mb={6} p={3}>
-        <Box my={80}>
+      <Container p={3} maxW="container.md">
+        <Box mt={20}>
           <Section>
             <CardItem />
           </Section>
