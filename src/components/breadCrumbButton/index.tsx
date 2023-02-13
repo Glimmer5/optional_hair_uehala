@@ -23,7 +23,7 @@ const BreadCrumbButton: React.FC<BreadCrumbButtonProps> = ({ children }) => {
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink color="teal.600" pointerEvents="none">
+        <BreadcrumbLink color="teal.500" pointerEvents="none">
           {children}
         </BreadcrumbLink>
       </BreadcrumbItem>

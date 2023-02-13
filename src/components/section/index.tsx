@@ -24,6 +24,7 @@ const Section: React.FC<SectionProps> = ({
       initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", delay }}
+      mb={10}
     >
       {children}
     </StyledDiv>

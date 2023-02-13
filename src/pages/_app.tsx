@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <AnimatePresence
         mode="wait"
-        initial={false}
+        initial={true}
         onExitComplete={() => window.scrollTo(0, 0)}
       >
         <Layout>
