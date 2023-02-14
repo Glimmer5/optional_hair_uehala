@@ -13,6 +13,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({ children, href, rightIcon, left
     <Button
       as={NextLink}
       href={href}
+      scroll={false}
       colorScheme="blue"
       boxShadow="xl"
       rightIcon={rightIcon}
