@@ -11,7 +11,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <AnimatePresence
         mode="wait"
         initial={true}
-        onExitComplete={() => window.scrollTo(0, 0)}
+        onExitComplete={() => {
+          if(typeof window !== "undefined") {
+            window.scrollTo({ top:0 })
+          }
+        }}
       >
         <Layout>
           <Component {...pageProps} />
