@@ -11,7 +11,7 @@ import Section from "../components/section";
 const Access: React.FC = () => {
   return (
     <MotionLayout>
-      <Container mb={6} p={3}>
+      <Container mb={6} p={3} maxW="container.md">
         <Box mt="70px">
           <Box mb={10}>
             <BreadCrumbButton>Access</BreadCrumbButton>
