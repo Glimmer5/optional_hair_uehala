@@ -1,5 +1,6 @@
 import { Container, Box, Text, Divider } from "@chakra-ui/react";
 import { PhoneIcon } from "@chakra-ui/icons";
+import Head from 'next/head';
 import BreadCrumbButton from "../components/breadCrumbButton";
 import Iframe from "../components/iframe";
 import Title from "../components/title";
@@ -11,6 +12,9 @@ import Section from "../components/section";
 const Access: React.FC = () => {
   return (
     <MotionLayout>
+      <Head>
+        <title>Access | Optional Hair Uehala</title>
+      </Head>
       <Container p={3} maxW="container.md">
         <Box>
           <Box mb={10}>
