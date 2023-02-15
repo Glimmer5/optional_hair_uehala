@@ -10,7 +10,7 @@ const Home: React.FC = () => {
   return (
     <MotionLayout>
       <Container p={3} maxW="container.md">
-        <Box mt={20}>
+        <Box>
           <Section>
             <CardItem />
           </Section>
