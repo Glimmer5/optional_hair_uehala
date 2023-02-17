@@ -1,5 +1,6 @@
 import { Container, Box } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import Head from 'next/head';
 import Iframe from "../components/iframe";
 import LinkButton from "../components/linkButton";
 import MotionLayout from "../components/motionLayout";
@@ -9,6 +10,9 @@ import Section from "../components/section";
 const Home: React.FC = () => {
   return (
     <MotionLayout>
+      <Head>
+        <title>Home | Optional Hair Uehala</title>
+      </Head>
       <Container p={3} maxW="container.md">
         <Box>
           <Section>
