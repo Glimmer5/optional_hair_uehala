@@ -126,7 +126,7 @@ const CardItems = () => {
       {cardList.map((item) => {
         return (
           <Box key={item.id}>
-            <Card maxW="sm">
+            <Card>
               <CardBody>
                 <Image
                   loader={({ src }) => src}
