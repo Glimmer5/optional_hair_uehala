@@ -4,8 +4,9 @@ import Head from 'next/head';
 import Iframe from "../components/iframe";
 import LinkButton from "../components/linkButton";
 import MotionLayout from "../components/motionLayout";
-import CardItem from "../components/cardItem";
 import Section from "../components/section";
+import MenuSlider from '../components/menuSlider';
+
 
 const Home: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
       <Container p={3} maxW="container.md">
         <Box>
           <Section>
-            <CardItem />
+            <MenuSlider />
           </Section>
           <Section delay={"0.2"}>
             <Iframe
