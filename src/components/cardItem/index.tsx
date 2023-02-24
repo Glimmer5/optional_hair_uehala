@@ -9,41 +9,73 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import imageSrc from "../../public/images/menuImage/menu-1.jpeg";
 
-const CardItem = () => {
+type CardImageProps = {
+  imageSrc: any;
+  altName: string;
+  nameTitle: string;
+  nameA: string;
+  nameB: string;
+  nameC: string;
+  nameD?: string;
+  valueA: string;
+  valueB: string;
+  valueC: string;
+  valueD?: string;
+  detailA: string;
+};
+
+const CardItem: React.FC<CardImageProps> = ({
+  imageSrc,
+  altName,
+  nameTitle,
+  nameA,
+  nameB,
+  nameC,
+  nameD,
+  valueA,
+  valueB,
+  valueC,
+  valueD,
+  detailA,
+}) => {
   return (
-    <Card maxW="sm">
+    <Card>
       <CardBody>
         <Image
           loader={({ src }) => src}
-          alt="cutMenu"
+          alt={altName}
           src={imageSrc}
           className="card-item-thumbnail"
         />
         <Stack mt={6} spacing={3}>
-          <Heading size="md">Cut</Heading>
+          <Heading size="md">{nameTitle}</Heading>
           <Box display="flex" justifyContent="space-between">
-            <Text>ハイスタンダードコース</Text>
-            <Text>6,500円</Text>
+            <Text>{nameA}</Text>
+            <Text>{valueA}</Text>
           </Box>
           <Box display="flex" justifyContent="space-between">
-            <Text>クラシックカットコース</Text>
-            <Text>4,500円</Text>
+            <Text>{nameB}</Text>
+            <Text>{valueB}</Text>
           </Box>
           <Box display="flex" justifyContent="space-between">
-            <Text>高校生カットコース</Text>
-            <Text>4,000円</Text>
+            <Text>{nameC}</Text>
+            <Text>{valueC}</Text>
           </Box>
           <Box display="flex" justifyContent="space-between">
-            <Text>高校生エステ無しコース</Text>
-            <Text>3,500円</Text>
+            <Text>{nameD}</Text>
+            <Text>{valueD}</Text>
           </Box>
         </Stack>
         <Divider mt={5} size="xl" />
       </CardBody>
-      <CardFooter>
-        <Text color="gray.500" fontSize="sm">※シャンプー、ブロー込み</Text>
+      <CardFooter display="block">
+        <Text color="gray.500" fontSize="sm">
+          {detailA}
+        </Text>
+        <Text color="gray.500" fontSize="sm">
+          ※料金は全て税込みです。
+        </Text>
       </CardFooter>
     </Card>
   );

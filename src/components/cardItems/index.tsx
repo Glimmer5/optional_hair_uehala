@@ -31,7 +31,7 @@ const CardItems = () => {
     priceB: string;
     priceC: string;
     priceD?: string;
-    detail: string;
+    detailA: string;
     image: any;
   };
 
@@ -47,7 +47,7 @@ const CardItems = () => {
       priceB: "¥4,950",
       priceC: "¥4,400",
       priceD: "¥3,850",
-      detail: "※シャンプー、ブロー込み",
+      detailA: "※シャンプー、ブロー込み。",
       image: cutImage,
     },
     {
@@ -61,7 +61,7 @@ const CardItems = () => {
       priceB: "¥4,500~",
       priceC: "¥5,500~",
       priceD: "¥6,500~",
-      detail: "※上記はショート料金となります",
+      detailA: "※上記はショート料金となります。",
       image: colorImage,
     },
     {
@@ -75,7 +75,7 @@ const CardItems = () => {
       priceB: "¥5,500~",
       priceC: "¥9,350~",
       priceD: "¥11,000~",
-      detail: "※上記はショート料金となります",
+      detailA: "※上記はショート料金となります。",
       image: permImage,
     },
     {
@@ -89,7 +89,7 @@ const CardItems = () => {
       priceB: "¥550",
       priceC: "¥550",
       priceD: "¥550",
-      detail: "※詳しくはスタッフまでお尋ねください",
+      detailA: "※詳しくはスタッフまでお尋ねください。",
       image: otherImage,
     },
     {
@@ -103,7 +103,7 @@ const CardItems = () => {
       priceB: "¥3,850",
       priceC: "¥4,620",
       priceD: " ",
-      detail: "※詳しくはスタッフまでお尋ねください",
+      detailA: "※詳しくはスタッフまでお尋ねください。",
       image: headspaImage,
     },
     {
@@ -116,7 +116,7 @@ const CardItems = () => {
       priceB: "¥1,100",
       priceC: "¥1,100",
       priceD: "",
-      detail: "※詳しくはスタッフまでお尋ねください",
+      detailA: "※詳しくはスタッフまでお尋ねください。",
       image: shavingImage,
     },
   ];
@@ -155,9 +155,12 @@ const CardItems = () => {
                 </Stack>
                 <Divider mt={5} size="xl" />
               </CardBody>
-              <CardFooter>
+              <CardFooter display="block">
                 <Text color="gray.500" fontSize="sm">
-                  {item.detail}
+                  {item.detailA}
+                </Text>
+                <Text color="gray.500" fontSize="sm">
+                  ※料金は全て税込みです。
                 </Text>
               </CardFooter>
             </Card>
