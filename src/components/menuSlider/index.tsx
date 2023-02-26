@@ -1,9 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar } from "swiper";
+import { Scrollbar, Navigation } from "swiper";
 import CardItem from "../cardItem";
 
 import "swiper/css";
 import "swiper/css/scrollbar";
+import "swiper/css/navigation"
 
 import cutImage from "../../public/images/menuImage/menu-1.jpeg";
 import colorImage from "../../public/images/menuImage/menu-2.jpeg";
@@ -15,9 +16,10 @@ import otherImage from "../../public/images/menuImage/menu-6.jpeg";
 const menuSlider: React.FC = () => {
   return (
     <Swiper
-      modules={[Scrollbar]}
+      modules={[Scrollbar, Navigation]}
       spaceBetween={10}
       grabCursor={true}
+      navigation
       breakpoints={{
         320: { slidesPerView: 1.2 },
         640: { slidesPerView: 2 },
@@ -85,7 +87,7 @@ const menuSlider: React.FC = () => {
           valueB="¥550"
           valueC="¥550"
           valueD="¥550"
-          detailA="※詳しくはスタッフまでお尋ねください。"
+          detailA="※詳しくはスタッフまで。"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -99,7 +101,7 @@ const menuSlider: React.FC = () => {
           valueA="¥1,650"
           valueB="¥3,850"
           valueC="¥4,620"
-          detailA="※詳しくはスタッフまでお尋ねください。"
+          detailA="※詳しくはスタッフまで。"
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -113,7 +115,7 @@ const menuSlider: React.FC = () => {
           valueA="¥2,530"
           valueB="¥1,100"
           valueC="¥1,100"
-          detailA="※詳しくはスタッフまでお尋ねください。"
+          detailA="※詳しくはスタッフまで。"
         />
       </SwiperSlide>
     </Swiper>
