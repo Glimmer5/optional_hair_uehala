@@ -25,7 +25,7 @@ const HamburgerMenuButton: React.FC = () => {
       <MenuList>
         <MenuItem>About</MenuItem>
         <MenuItem as={NextLink} href="/menu">Menu</MenuItem>
-        <MenuItem>Staff</MenuItem>
+        <MenuItem as={NextLink} href="/staff">Staff</MenuItem>
         <MenuItem as={NextLink} href="/access">Access</MenuItem>
         <MenuDivider />
         <MenuItem as={Link} href="https://ja-jp.facebook.com/people/Optional-Hair-Uehala/100057615032399/">

@@ -62,7 +62,7 @@ const Header: React.FC = () => {
             <BreadcrumbLink as={NextLink} href="/menu">Menu</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink as={NextLink} href="/">Staff</BreadcrumbLink>
+            <BreadcrumbLink as={NextLink} href="/staff">Staff</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
             <BreadcrumbLink as={NextLink} href="/access">Access</BreadcrumbLink>
