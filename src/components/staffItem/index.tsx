@@ -7,11 +7,17 @@ type StaffItemProps = {
   bg: string;
   altName: string;
   imageSrc: string;
-}
+};
 
-const StaffItem: React.FC<StaffItemProps> = ({ title, name, bg, altName, imageSrc }) => {
+const StaffItem: React.FC<StaffItemProps> = ({
+  title,
+  name,
+  bg,
+  altName,
+  imageSrc,
+}) => {
   return (
-      <Box mb={10}>
+      <Box>
         <Box
           w="100"
           textAlign="center"
@@ -21,11 +27,7 @@ const StaffItem: React.FC<StaffItemProps> = ({ title, name, bg, altName, imageSr
         >
           <Box py={12}>
             <Center>
-              <Image
-                alt={altName}
-                src={imageSrc}
-                loader={({ src }) => src}
-              />
+              <Image alt={altName} src={imageSrc} loader={({ src }) => src} />
             </Center>
           </Box>
         </Box>
