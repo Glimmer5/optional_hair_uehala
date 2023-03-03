@@ -1,10 +1,13 @@
-import { Container, Box } from "@chakra-ui/react";
+import { Container, Box, SimpleGrid } from "@chakra-ui/react";
 import Head from "next/head";
 import BreadCrumbButton from "../components/breadCrumbButton";
 import StaffItem from "../components/staffItem";
 import MotionLayout from "../components/motionLayout";
 
 import Kei from "../public/images/staffImage/staff1.svg";
+import Saya from "../public/images/staffImage/staff2.svg";
+import Yoshiaki from "../public/images/staffImage/staff3.svg";
+import Hideko from "../public/images/staffImage/staff4.svg";
 
 const Staff: React.FC = () => {
   return (
@@ -16,7 +19,7 @@ const Staff: React.FC = () => {
         <Box mb={10}>
           <BreadCrumbButton>Staff</BreadCrumbButton>
         </Box>
-        <Box mb={10}>
+        <SimpleGrid columns={[1, 1, 2]} spacing={10} mb={10}>
           <StaffItem
             title="OWNER / TOP DIRECTOR"
             name="KEI"
@@ -24,7 +27,28 @@ const Staff: React.FC = () => {
             altName="Kei"
             imageSrc={Kei}
           />
-        </Box>
+          <StaffItem
+            title="BEAUTY / STYLIST"
+            name="SAYA"
+            bg="linear(to-t, red.200, yellow.400)"
+            altName="Saya"
+            imageSrc={Saya}
+          />
+          <StaffItem
+            title="BARBERE / STYLIST"
+            name="YOSHIAKI"
+            bg="linear(to-t, green.200, green.500)"
+            altName="Yoshiaki"
+            imageSrc={Yoshiaki}
+          />
+          <StaffItem
+            title="BEAUTY / ESTHETIC"
+            name="HIDEKO"
+            bg="linear(to-t, pink.200, purple.400)"
+            altName="Hideko"
+            imageSrc={Hideko}
+          />
+        </SimpleGrid>
       </Container>
     </MotionLayout>
   );
