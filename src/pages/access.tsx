@@ -1,6 +1,6 @@
 import { Container, Box, Text, Divider } from "@chakra-ui/react";
 import { PhoneIcon } from "@chakra-ui/icons";
-import Head from 'next/head';
+import Head from "next/head";
 import BreadCrumbButton from "../components/breadCrumbButton";
 import Iframe from "../components/iframe";
 import Title from "../components/title";
@@ -17,15 +17,17 @@ const Access: React.FC = () => {
       </Head>
       <Container p={3} maxW="container.md">
         <Box>
-          <Box mb={10}>
-            <BreadCrumbButton>Access</BreadCrumbButton>
-          </Box>
-          <Box mb={10}>
-            <Iframe
-              title="googleMap"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.068505054597!2d138.31431651555206!3d36.696891679969966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d895ee28349c3%3A0x6dc4e3b22b2c3850!2sUehala%20Optional%20Hair!5e0!3m2!1sja!2sjp!4v1649639613112!5m2!1sja!2sjp"
-            />
-          </Box>
+          <Section>
+            <Box mb={10}>
+              <BreadCrumbButton>Access</BreadCrumbButton>
+            </Box>
+            <Box mb={10}>
+              <Iframe
+                title="googleMap"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.068505054597!2d138.31431651555206!3d36.696891679969966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601d895ee28349c3%3A0x6dc4e3b22b2c3850!2sUehala%20Optional%20Hair!5e0!3m2!1sja!2sjp!4v1649639613112!5m2!1sja!2sjp"
+              />
+            </Box>
+          </Section>
           <Section delay="0.1">
             <Box mb={3}>
               <Title>店舗情報</Title>

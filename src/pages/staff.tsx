@@ -21,14 +21,16 @@ const Staff: React.FC = () => {
           <BreadCrumbButton>Staff</BreadCrumbButton>
         </Box>
         <SimpleGrid columns={[1, 1, 2]} spacing={5}>
-          <StaffItem
-            id="kei"
-            title="Owner / Top Director"
-            name="Kei"
-            bg="linear(to-t, blue.200, teal.500)"
-            altName="Kei"
-            imageSrc={Kei}
-          />
+          <Section>
+            <StaffItem
+              id="kei"
+              title="Owner / Top Director"
+              name="Kei"
+              bg="linear(to-t, blue.200, teal.500)"
+              altName="Kei"
+              imageSrc={Kei}
+            />
+          </Section>
           <Section delay="0.1">
             <StaffItem
               id="saya"
