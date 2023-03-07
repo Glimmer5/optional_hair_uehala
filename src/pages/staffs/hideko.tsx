@@ -56,7 +56,7 @@ const Hideko: React.FC = () => {
         </Section>
         <Section delay="0.1">
           <Box mb={3}>
-            <Title>定休日</Title>
+            <Title>出勤予定</Title>
           </Box>
           <Box mb={10}>
             <ArticleBox>
