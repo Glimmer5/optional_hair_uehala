@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           spacing="10px"
         >
           <BreadcrumbItem>
-            <BreadcrumbLink as={NextLink} href="/">About</BreadcrumbLink>
+            <BreadcrumbLink as={NextLink} href="/about">About</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
             <BreadcrumbLink as={NextLink} href="/menu">Menu</BreadcrumbLink>
