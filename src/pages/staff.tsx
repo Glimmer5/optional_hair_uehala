@@ -3,6 +3,7 @@ import Head from "next/head";
 import BreadCrumbButton from "../components/breadCrumbButton";
 import StaffItem from "../components/staffItem";
 import MotionLayout from "../components/motionLayout";
+import Section from "../components/section";
 
 import Kei from "../public/images/staffImage/staff1.svg";
 import Saya from "../public/images/staffImage/staff2.svg";
@@ -19,7 +20,7 @@ const Staff: React.FC = () => {
         <Box mb={10}>
           <BreadCrumbButton>Staff</BreadCrumbButton>
         </Box>
-        <SimpleGrid columns={[1, 1, 2]} spacing={10} mb={10}>
+        <SimpleGrid columns={[1, 1, 2]} spacing={5}>
           <StaffItem
             id="kei"
             title="Owner / Top Director"
@@ -28,30 +29,36 @@ const Staff: React.FC = () => {
             altName="Kei"
             imageSrc={Kei}
           />
-          <StaffItem
-            id="saya"
-            title="Beauty / Stylist"
-            name="Saya"
-            bg="linear(to-t, red.200, yellow.400)"
-            altName="Saya"
-            imageSrc={Saya}
-          />
-          <StaffItem
-            id="yoshiaki"
-            title="Barber / Stylist"
-            name="Yoshiaki"
-            bg="linear(to-t, green.200, green.500)"
-            altName="Yoshiaki"
-            imageSrc={Yoshiaki}
-          />
-          <StaffItem
-            id="hideko"
-            title="Beauty / Esthetic"
-            name="Hideko"
-            bg="linear(to-t, pink.200, purple.400)"
-            altName="Hideko"
-            imageSrc={Hideko}
-          />
+          <Section delay="0.1">
+            <StaffItem
+              id="saya"
+              title="Beauty / Stylist"
+              name="Saya"
+              bg="linear(to-t, red.200, yellow.400)"
+              altName="Saya"
+              imageSrc={Saya}
+            />
+          </Section>
+          <Section delay="0.2">
+            <StaffItem
+              id="yoshiaki"
+              title="Barber / Stylist"
+              name="Yoshiaki"
+              bg="linear(to-t, green.200, green.500)"
+              altName="Yoshiaki"
+              imageSrc={Yoshiaki}
+            />
+          </Section>
+          <Section delay="0.3">
+            <StaffItem
+              id="hideko"
+              title="Beauty / Esthetic"
+              name="Hideko"
+              bg="linear(to-t, pink.200, purple.400)"
+              altName="Hideko"
+              imageSrc={Hideko}
+            />
+          </Section>
         </SimpleGrid>
       </Container>
     </MotionLayout>
