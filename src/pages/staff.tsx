@@ -21,29 +21,33 @@ const Staff: React.FC = () => {
         </Box>
         <SimpleGrid columns={[1, 1, 2]} spacing={10} mb={10}>
           <StaffItem
-            title="OWNER / TOP DIRECTOR"
-            name="KEI"
+            id="kei"
+            title="Owner / Top Director"
+            name="Kei"
             bg="linear(to-t, blue.200, teal.500)"
             altName="Kei"
             imageSrc={Kei}
           />
           <StaffItem
-            title="BEAUTY / STYLIST"
-            name="SAYA"
+            id="saya"
+            title="Beauty / Stylist"
+            name="Saya"
             bg="linear(to-t, red.200, yellow.400)"
             altName="Saya"
             imageSrc={Saya}
           />
           <StaffItem
-            title="BARBERE / STYLIST"
-            name="YOSHIAKI"
+            id="yoshiaki"
+            title="Barber / Stylist"
+            name="Yoshiaki"
             bg="linear(to-t, green.200, green.500)"
             altName="Yoshiaki"
             imageSrc={Yoshiaki}
           />
           <StaffItem
-            title="BEAUTY / ESTHETIC"
-            name="HIDEKO"
+            id="hideko"
+            title="Beauty / Esthetic"
+            name="Hideko"
             bg="linear(to-t, pink.200, purple.400)"
             altName="Hideko"
             imageSrc={Hideko}
