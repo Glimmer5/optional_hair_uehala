@@ -20,7 +20,7 @@ const Staff: React.FC = () => {
         <Box mb={10}>
           <BreadCrumbButton>Staff</BreadCrumbButton>
         </Box>
-        <SimpleGrid columns={[1, 1, 2]} spacing={5}>
+        <SimpleGrid columns={[1, 1, 2]} spacing={5} mb={10}>
           <Section>
             <StaffItem
               id="kei"

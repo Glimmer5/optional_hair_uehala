@@ -28,7 +28,7 @@ const Access: React.FC = () => {
               />
             </Box>
           </Section>
-          <Section delay="0.1">
+          <Section delay="0.1" mb={10}>
             <Box mb={3}>
               <Title>店舗情報</Title>
             </Box>

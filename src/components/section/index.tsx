@@ -5,6 +5,7 @@ type SectionProps = {
   children: React.ReactNode;
   delay?: string;
   chakraProps?: ChakraProps;
+  mb?: number;
 };
 
 const StyledDiv = chakra(motion.div, {
@@ -17,6 +18,7 @@ const Section: React.FC<SectionProps> = ({
   children,
   delay,
   chakraProps,
+  mb
 }) => {
   return (
     <StyledDiv
@@ -24,7 +26,7 @@ const Section: React.FC<SectionProps> = ({
       initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", delay }}
-      mb={10}
+      mb={mb}
     >
       {children}
     </StyledDiv>
