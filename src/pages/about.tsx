@@ -28,7 +28,7 @@ const About: React.FC = () => {
             </Text>
           </Box>
         </Section>
-        <Box>
+        <Box mb={10}>
           <SimpleGrid columns={[1, 1, 2]} spacing={5}>
             <Section delay="0.1">
               <Image
