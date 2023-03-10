@@ -5,6 +5,10 @@ import Layout from "../components/layout";
 import type { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
 
+if (typeof window !== 'undefined') {
+  window.history.scrollRestoration = 'manual'
+}
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
@@ -13,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
         initial={true}
         onExitComplete={() => {
           if(typeof window !== "undefined") {
-            window.scrollTo({ top:0 })
+            window.scrollTo({ top: 0 })
           }
         }}
       >
