@@ -22,7 +22,7 @@ const About: React.FC = () => {
             <BreadCrumbButton>About</BreadCrumbButton>
           </Box>
           <Box mb={10}>
-            <Heading textAlign="center">くつろぎと新しい刺激を。</Heading>
+            <Heading textAlign="center">くつろぎと<br />新しい刺激を。</Heading>
             <Text mt={5}>
               昔ながらの理容室の良さ（技術やくつろぎ、癒し）に最新のメンズエステシェービング、ヘッドスパやクリープパーマ、美容ブースではまつげパーマや個室にて女性理容師によるレディースシェービング等新しい刺激も取り入れたお店です。
             </Text>
