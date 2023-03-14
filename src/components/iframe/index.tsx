@@ -1,19 +1,15 @@
 import { AspectRatio, Card, CardBody } from "@chakra-ui/react";
 
 type Iframe = {
-  title: string;
-  src: string;
+  children: React.ReactNode;
 }
 
-const Iframe: React.FC<Iframe> = ({ title, src }) => {
+const Iframe: React.FC<Iframe> = ({ children }) => {
   return (
     <Card>
       <CardBody>
         <AspectRatio ratio={4 / 3}>
-          <iframe
-            title={title}
-            src={src}
-          />
+          {children}
         </AspectRatio>
       </CardBody>
     </Card>

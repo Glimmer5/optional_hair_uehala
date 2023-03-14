@@ -1,10 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar, Navigation } from "swiper";
+import { Scrollbar, Navigation, FreeMode } from "swiper";
 import CardItem from "../cardItem";
 
 import "swiper/css";
 import "swiper/css/scrollbar";
 import "swiper/css/navigation"
+import "swiper/css/free-mode";
 
 import cutImage from "../../public/images/menuImage/menu-1.jpeg";
 import colorImage from "../../public/images/menuImage/menu-2.jpeg";
@@ -13,10 +14,11 @@ import headspaImage from "../../public/images/menuImage/menu-4.jpeg";
 import shavingImage from "../../public/images/menuImage/menu-5.jpeg";
 import otherImage from "../../public/images/menuImage/menu-6.jpeg";
 
-const menuSlider: React.FC = () => {
+const MenuSlider: React.FC = () => {
   return (
     <Swiper
-      modules={[Scrollbar, Navigation]}
+      modules={[Scrollbar, Navigation, FreeMode]}
+      freeMode={true}
       spaceBetween={10}
       grabCursor={true}
       navigation
@@ -122,4 +124,4 @@ const menuSlider: React.FC = () => {
   );
 };
 
-export default menuSlider;
+export default MenuSlider;
