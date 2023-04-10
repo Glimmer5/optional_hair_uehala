@@ -27,7 +27,7 @@ const Home: React.FC = () => {
               <HeroSlider />
             </Iframe>
           </Section>
-          <Section>
+          <Section delay="0.1">
             <Box mb={10}>
               <Heading textAlign="center">
                 くつろぎと
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
               </Text>
             </Box>
           </Section>
-          <Section delay="0.1" mb={10}>
+          <Section delay="0.2" mb={10}>
             <MenuSlider />
           </Section>
           <SimpleGrid columns={[1, 1, 2]} spacing={5} mb={10}>
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
               altName="Kei"
               imageSrc={Kei}
             />
-            <Section delay="0.2">
+            <Section delay="0.3">
               <StaffItem
                 id="saya"
                 title="Beauty / Stylist"
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
                 imageSrc={Saya}
               />
             </Section>
-            <Section delay="0.3">
+            <Section delay="0.4">
               <StaffItem
                 id="yoshiaki"
                 title="Barber / Stylist"
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
                 imageSrc={Yoshiaki}
               />
             </Section>
-            <Section delay="0.4">
+            <Section delay="0.5">
               <StaffItem
                 id="hideko"
                 title="Beauty / Esthetic"
@@ -82,7 +82,7 @@ const Home: React.FC = () => {
               />
             </Section>
           </SimpleGrid>
-          <Section delay="0.5">
+          <Section delay="0.6">
             <Iframe>
               <iframe
                 title="googleMap"

@@ -9,6 +9,7 @@ import AboutImage1 from "../../public/images/aboutImage/aboutimg1.jpeg";
 import AboutImage2 from "../../public/images/aboutImage/aboutimg2.jpeg";
 import AboutImage3 from "../../public/images/aboutImage/aboutimg3.jpeg";
 import AboutImage4 from "../../public/images/aboutImage/aboutimg4.jpeg";
+import AboutImage6 from "../../public/images/aboutImage/aboutImage6.jpeg";
 
 const HeroSlider: React.FC = () => {
   return (
@@ -31,6 +32,9 @@ const HeroSlider: React.FC = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Image loader={({ src }) => src} alt="aboutImage" src={AboutImage4} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image loader={({ src }) => src} alt="aboutImage" src={AboutImage6} />
       </SwiperSlide>
     </Swiper>
   );

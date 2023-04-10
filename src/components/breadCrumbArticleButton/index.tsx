@@ -2,11 +2,13 @@ import NextLink from "next/link";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
-type BreadCrumbArticleButton = {
-    children: React.ReactNode;
-}
+type BreadCrumbArticleButtonProps = {
+  children: React.ReactNode;
+};
 
-const BreadCrumbArticleButton: React.FC<BreadCrumbArticleButton> = ({ children }) => {
+const BreadCrumbArticleButton: React.FC<BreadCrumbArticleButtonProps> = ({
+  children,
+}) => {
   return (
     <Breadcrumb spacing="5px" separator={<ChevronRightIcon color="gray.500" />}>
       <BreadcrumbItem>
@@ -36,11 +38,10 @@ const BreadCrumbArticleButton: React.FC<BreadCrumbArticleButton> = ({ children }
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink color="teal.500" pointerEvents="none">
+        <BreadcrumbLink color="teal.500" pointerEvents="none" href="">
           {children}
         </BreadcrumbLink>
       </BreadcrumbItem>
-      
     </Breadcrumb>
   );
 };
