@@ -5,10 +5,12 @@ import BreadCrumbButton from "../components/breadCrumbButton";
 import Image from "next/image";
 import Section from "../components/section";
 
-import AboutImage1 from "../public/images/aboutImage/aboutimg1.jpeg";
-import AboutImage2 from "../public/images/aboutImage/aboutimg2.jpeg";
-import AboutImage3 from "../public/images/aboutImage/aboutimg3.jpeg";
-import AboutImage4 from "../public/images/aboutImage/aboutimg4.jpeg";
+import AboutImage1 from "../public/images/aboutImage/aboutImage1.jpeg";
+import AboutImage2 from "../public/images/aboutImage/aboutImage2.jpeg";
+import AboutImage3 from "../public/images/aboutImage/aboutImage3.jpeg";
+import AboutImage4 from "../public/images/aboutImage/aboutImage4.jpeg";
+import AboutImage5 from "../public/images/aboutImage/aboutImage5.jpeg";
+import AboutImage6 from "../public/images/aboutImage/aboutImage6.jpeg";
 
 const About: React.FC = () => {
   return (
@@ -59,6 +61,22 @@ const About: React.FC = () => {
                 loader={({ src }) => src}
                 alt="aboutImage"
                 src={AboutImage4}
+                className="card-item-thumbnail"
+              />
+            </Section>
+            <Section delay="0.5">
+              <Image
+                loader={({ src }) => src}
+                alt="aboutImage"
+                src={AboutImage5}
+                className="card-item-thumbnail"
+              />
+            </Section>
+            <Section delay="0.6">
+              <Image
+                loader={({ src }) => src}
+                alt="aboutImage"
+                src={AboutImage6}
                 className="card-item-thumbnail"
               />
             </Section>
