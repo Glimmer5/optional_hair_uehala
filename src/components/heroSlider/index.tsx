@@ -5,10 +5,11 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-fade"
 
-import AboutImage1 from "../../public/images/aboutImage/aboutimg1.jpeg";
-import AboutImage2 from "../../public/images/aboutImage/aboutimg2.jpeg";
-import AboutImage3 from "../../public/images/aboutImage/aboutimg3.jpeg";
-import AboutImage4 from "../../public/images/aboutImage/aboutimg4.jpeg";
+import AboutImage1 from "../../public/images/aboutImage/aboutImage1.jpeg";
+import AboutImage2 from "../../public/images/aboutImage/aboutImage2.jpeg";
+import AboutImage3 from "../../public/images/aboutImage/aboutImage3.jpeg";
+import AboutImage4 from "../../public/images/aboutImage/aboutImage4.jpeg";
+import AboutImage5 from "../../public/images/aboutImage/aboutImage5.jpeg";
 import AboutImage6 from "../../public/images/aboutImage/aboutImage6.jpeg";
 
 const HeroSlider: React.FC = () => {
@@ -32,6 +33,9 @@ const HeroSlider: React.FC = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Image loader={({ src }) => src} alt="aboutImage" src={AboutImage4} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image loader={({ src }) => src} alt="aboutImage" src={AboutImage5} />
       </SwiperSlide>
       <SwiperSlide>
         <Image loader={({ src }) => src} alt="aboutImage" src={AboutImage6} />
