@@ -66,33 +66,33 @@ const Hideko: React.FC = () => {
               </Box>
               <Divider my={2} size="xl" />
               <Box display="flex" justifyContent="space-between">
-                <Text>火曜日</Text>
-                <Text>休み</Text>
+                <Text>火曜日（第1火曜日は休み）</Text>
+                <Text>10:00~16:00</Text>
               </Box>
               <Divider my={2} size="xl" />
               <Box display="flex" justifyContent="space-between">
                 <Text>水曜日</Text>
-                <Text>9:00~18:30</Text>
+                <Text>10:00~16:00</Text>
               </Box>
               <Divider my={2} size="xl" />
               <Box display="flex" justifyContent="space-between">
                 <Text>木曜日</Text>
-                <Text>9:00~22:00</Text>
+                <Text>10:00~16:00</Text>
               </Box>
               <Divider my={2} size="xl" />
               <Box display="flex" justifyContent="space-between">
                 <Text>金曜日</Text>
-                <Text>9:00~18:30</Text>
+                <Text>10:00~16:00</Text>
               </Box>
               <Divider my={2} size="xl" />
               <Box display="flex" justifyContent="space-between">
                 <Text>土曜日</Text>
-                <Text>9:00~18:30</Text>
+                <Text>10:00~16:00</Text>
               </Box>
               <Divider my={2} size="xl" />
               <Box display="flex" justifyContent="space-between">
-                <Text>日曜日</Text>
-                <Text>9:00~18:30</Text>
+                <Text>日曜日（第3日曜日は休み）</Text>
+                <Text>10:00~16:00</Text>
               </Box>
               <Divider my={2} size="xl" />
               <Text color="gray.500" fontSize="sm">

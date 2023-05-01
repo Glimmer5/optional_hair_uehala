@@ -74,7 +74,7 @@ const CardItem: React.FC<CardImageProps> = ({
           {detailA}
         </Text>
         <Text color="gray.500" fontSize="sm">
-          ※料金は全て税込みです。
+          ※料金は全て税抜きです。
         </Text>
       </CardFooter>
     </Card>
