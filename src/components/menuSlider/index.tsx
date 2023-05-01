@@ -37,10 +37,10 @@ const MenuSlider: React.FC = () => {
           nameB="クラシックカットコース"
           nameC="高校生カットコース"
           nameD="高校生エステ無しコース"
-          valueA="¥7,150"
-          valueB="¥4,950"
-          valueC="¥4,400"
-          valueD="¥3,850"
+          valueA="¥6,700"
+          valueB="¥4,700"
+          valueC="¥4,200"
+          valueD="¥3,700"
           detailA="※シャンプー、ブロー込み。"
         />
       </SwiperSlide>
@@ -53,10 +53,10 @@ const MenuSlider: React.FC = () => {
           nameB="ショート"
           nameC="ミディアム"
           nameD="ロング"
-          valueA="¥3,800~"
-          valueB="¥4,500~"
-          valueC="¥5,500~"
-          valueD="¥6,500~"
+          valueA="¥4,000~"
+          valueB="¥4,700~"
+          valueC="¥5,700~"
+          valueD="¥6,700~"
           detailA="※上記はショート料金となります。"
         />
       </SwiperSlide>
@@ -69,10 +69,10 @@ const MenuSlider: React.FC = () => {
           nameB="ケアアイロンパーマ"
           nameC="オプショナルクリープ"
           nameD="縮毛矯正"
-          valueA="¥5,500~"
-          valueB="¥5,500~"
-          valueC="¥9,350~"
-          valueD="¥11,000~"
+          valueA="¥6,000~"
+          valueB="¥6,000~"
+          valueC="¥8,500~"
+          valueD="¥10,000~"
           detailA="※上記はショート料金となります。"
         />
       </SwiperSlide>

@@ -43,10 +43,10 @@ const CardItems = () => {
       nameB: "クラシックカットコース",
       nameC: "高校生カットコース",
       nameD: "高校生エステ無しコース",
-      priceA: "¥7,150",
-      priceB: "¥4,950",
-      priceC: "¥4,400",
-      priceD: "¥3,850",
+      priceA: "¥6,700",
+      priceB: "¥4,700",
+      priceC: "¥4,200",
+      priceD: "¥3,700",
       detailA: "※シャンプー、ブロー込み。",
       image: cutImage,
     },
@@ -57,10 +57,10 @@ const CardItems = () => {
       nameB: "ショート",
       nameC: "ミディアム",
       nameD: "ロング",
-      priceA: "¥3,800~",
-      priceB: "¥4,500~",
-      priceC: "¥5,500~",
-      priceD: "¥6,500~",
+      priceA: "¥4,000~",
+      priceB: "¥4,700~",
+      priceC: "¥5,700~",
+      priceD: "¥6,700~",
       detailA: "※上記はショート料金となります。",
       image: colorImage,
     },
@@ -71,10 +71,10 @@ const CardItems = () => {
       nameB: "ケアアイロンパーマ",
       nameC: "オプショナルクリープ",
       nameD: "縮毛矯正",
-      priceA: "¥5,500~",
-      priceB: "¥5,500~",
-      priceC: "¥9,350~",
-      priceD: "¥11,000~",
+      priceA: "¥6,000~",
+      priceB: "¥6,000~",
+      priceC: "¥8,500~",
+      priceD: "¥10,000~",
       detailA: "※上記はショート料金となります。",
       image: permImage,
     },
@@ -160,7 +160,7 @@ const CardItems = () => {
                   {item.detailA}
                 </Text>
                 <Text color="gray.500" fontSize="sm">
-                  ※料金は全て税込みです。
+                  ※料金は全て税抜きです。
                 </Text>
               </CardFooter>
             </Card>

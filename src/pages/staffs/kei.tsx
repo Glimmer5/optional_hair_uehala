@@ -66,8 +66,8 @@ const Kei: React.FC = () => {
               </Box>
               <Divider my={2} size="xl" />
               <Box display="flex" justifyContent="space-between">
-                <Text>火曜日</Text>
-                <Text>休み</Text>
+                <Text>火曜日（第1火曜日は休み）</Text>
+                <Text>9:00~18:30</Text>
               </Box>
               <Divider my={2} size="xl" />
               <Box display="flex" justifyContent="space-between">
@@ -91,7 +91,7 @@ const Kei: React.FC = () => {
               </Box>
               <Divider my={2} size="xl" />
               <Box display="flex" justifyContent="space-between">
-                <Text>日曜日</Text>
+                <Text>日曜日（第3日曜日は休み）</Text>
                 <Text>9:00~18:30</Text>
               </Box>
               <Divider my={2} size="xl" />
