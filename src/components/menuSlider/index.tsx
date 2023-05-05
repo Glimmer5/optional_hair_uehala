@@ -85,10 +85,10 @@ const MenuSlider: React.FC = () => {
           nameB="イヤースッキリ"
           nameC="北斗のマッサージ"
           nameD="シャイニングクロー"
-          valueA="¥770"
-          valueB="¥550"
-          valueC="¥550"
-          valueD="¥550"
+          valueA="¥700"
+          valueB="¥500"
+          valueC="¥500"
+          valueD="¥500"
           detailA="※詳しくはスタッフまで。"
         />
       </SwiperSlide>
@@ -100,9 +100,9 @@ const MenuSlider: React.FC = () => {
           nameA="クレンジングスパ"
           nameB="育毛ヘッドスパ"
           nameC="育毛オプショナルスパ"
-          valueA="¥1,650"
-          valueB="¥3,850"
-          valueC="¥4,620"
+          valueA="¥1,500"
+          valueB="¥3,500"
+          valueC="¥4,200"
           detailA="※詳しくはスタッフまで。"
         />
       </SwiperSlide>
@@ -114,9 +114,9 @@ const MenuSlider: React.FC = () => {
           nameA="フェイスケアシェープ"
           nameB="タイムスリップエステ"
           nameC="各種パック"
-          valueA="¥2,530"
-          valueB="¥1,100"
-          valueC="¥1,100"
+          valueA="¥2,300"
+          valueB="¥1,000"
+          valueC="¥1,000"
           detailA="※詳しくはスタッフまで。"
         />
       </SwiperSlide>
